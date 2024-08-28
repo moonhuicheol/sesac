@@ -1,0 +1,125 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+.종이 {
+    width: 670px;
+    height: 960px;
+    border: 1px solid #aacdff;
+    border-radius: 20px;
+
+    padding-top: 72px;
+    padding-bottom: 70px;
+    padding-left: 100px;
+    padding-right: 104px;
+
+    box-shadow: 7px 7px 39px 0px #0068ff40;
+}
+
+.제목 {
+    color: #0068ff;
+    font-size: 32px;
+    font-weight: 700;
+}
+
+.네임택 {
+    color: #797979;
+    font-weight: 400;
+    font-size: 16px;
+
+    padding-top: 21px;
+}
+
+.이메일네임택 {
+    padding-top: 60px;
+}
+
+.입력창 {
+    width: 466px;
+    font-size: 26px;
+    color: orange;
+
+    border-top: none;
+    border-left: none;
+    border-right: none;
+    border-bottom: 1px solid #cfcfcf;
+
+    outline: none;
+}
+
+.이메일입력창 {
+    border-bottom: 1px solid #0068ff;
+}
+
+.입력창:focus {
+    border-bottom: 2px solid #0068ff;
+}
+
+.우리동네 {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    padding-top: 50px;
+}
+
+.성별버튼 {
+    width: 140px;
+    height: 23.94px;
+    display: flex;
+    justify-content: space-between;
+}
+
+label {
+    vertical-align: 3px;
+}
+
+#여자선택 {
+    width: 20px;
+    height: 19.95px;
+}
+
+#남자선택 {
+    width: 20px;
+    height: 19.95px;
+}
+
+.훈이동네 {
+    width: 454px;
+    height: 21.06px;
+    font-size: 14px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 50px;
+}
+
+hr {
+    margin-top: 30px;
+}
+
+#동의하기체크{
+    width: 20px;
+    height: 20px;
+    border: 1px solid #c4c4c4;
+    border-radius: 3px;
+    margin-right: 10px;
+}
+.가입하는버튼 {
+    width: 470px;
+    height: 75px;
+    border: 1px solid #0068ff;
+    border-radius: 10px;
+    font-size: 18px;
+    font-weight: 400;
+    margin-top: 30px;
+    color: #0068ff;
+    background-color: #ffffff;
+}
+
+.가입하는버튼:hover {
+    color: white;
+    background-color: blue;
+}
+

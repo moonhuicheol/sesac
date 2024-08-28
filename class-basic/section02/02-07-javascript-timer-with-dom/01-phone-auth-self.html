@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>Document</title>
+        <script>
+            async function authNumber(){
+
+                await timer();
+                const randomNumber = Math.random()*1000000;
+                const Number = Math.floor(randomNumber);
+
+                const randomString = String(Number).padStart(6, 0);
+                console.log(randomString);
+                document.getElementById("auth_number").innerText = randomString;
+            }
+
+            function timer() {
+                let time = 180;
+                let setTimer = setInterval(function(){
+                    let minutes = Math.floor(time / 60);
+                    let seconds = time % 60;
+                    document.getElementById("auth_timer").innerText = `
+                        ${minutes}:${seconds}`
+                        time--;
+
+                    if((minutes==0)&&(seconds== 0)) {
+                        clearInterval();
+                    }
+                }, 1000);
+            }
+
+        </script>
+    </head>
+    <body>
+        <div id="auth_number"></div>
+        <button onclick="authNumber()">인증번호요청하기</button>
+        <div id="auth_timer"> </div>
+    </body>
+</html>

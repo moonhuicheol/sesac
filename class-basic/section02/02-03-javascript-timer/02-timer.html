@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>타이머실습</title>
+        <script>
+            function 타이머() {
+                let 시간 = 180;
+                setInterval(function(){
+                    let 분 = Math.floor(시간 / 60);
+                    let 초 = 시간 % 60;
+
+                    console.log("남은시간: " + 분 + ":" + 초)
+                    시간--;
+                }, 1000);
+            }
+        </script>
+    </head>
+    <body>
+        <button onclick="타이머()">타이머시작</button>
+    </body>
+</html>

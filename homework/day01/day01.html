@@ -1,0 +1,245 @@
+<!DOCTYPE html>
+<html lang="ko">
+    <head>
+        <title>slack</title>
+        <link rel="stylesheet" href="./day01.css">
+        <script src="./day01.js"></script>
+    </head>
+    <body>
+        <div class="bg1">
+            <div class="header">
+                <div class="header_box">
+                    <div class="header_left">
+                        <img src="./img/arrow_left.png" alt="">
+                        <img src="./img/arrow_right.png" alt="">
+                        <img src="./img/time.png" alt="">
+                    </div>
+                    <div class="header_right">
+                        <div class="search_bar">
+                            <div class="search_bar_img">
+                                <img src="./img/search.png" alt="">
+                            </div>
+                            <div class="search_bar_text">
+                                수강생을 검색해보세요.
+                            </div>
+                        </div>
+                        <div class="help_box">
+                            <div class="help_box_student">
+                                <div class="help_box_img">
+                                    <img src="./img/logo_codecamp.png" alt="">
+                                </div>
+                                <div class="help_box_text">
+                                    수강생
+                                </div>
+                            </div>
+                            <div class="help_box_img">
+                                <img src="./img/help.png" alt="">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="body">
+                <div class="nav"> <!-- nav bar -->
+                    <div class="nav_img">
+                        <div class="nav_img_box">
+                            <img src="./img/채널 이미지.png" alt="">
+                            <div class="nav_img_box_text"></div>
+                        </div>
+                        <div class="nav_img_box">
+                            <img src="./img/home.png" alt="">
+                            <div class="nav_img_box_text">홈</div>
+                        </div>
+                        <div class="nav_img_box">
+                            <img src="./img/chat.png" alt="">
+                            <div class="nav_img_box_text">대화</div>
+                        </div>
+                        <div class="nav_img_box">
+                            <img src="./img/notifications.png" alt="">
+                            <div class="nav_img_box_text">알림</div>
+                        </div>
+                        <div class="nav_img_box">
+                            <img src="./img/bookmark.png" alt="">
+                            <div class="nav_img_box_text">북마크</div>
+                        </div>
+                        <div class="nav_img_box">
+                            <img src="./img/more_meatball.png" alt="">
+                            <div class="nav_img_box_text">더보기</div>
+                        </div>
+                    </div>
+                    <div class="add_student">
+                        <img src="./img/add_profile.png" alt="">
+                        <img src="./img/내 프로필_A.png" alt="">
+                    </div>
+                </div>
+                <div class="bg2">
+                    <div class="bg3">
+                        <div class="menu">
+                            <div class="menu_header">  <!--코드캠프+이모티콘-->
+                                <div class="menu_header_text">
+                                    코드캠프
+                                </div>
+                                <div class="header_img">
+                                    <img src="./img/filter.png" alt="">
+                                    <img src="./img/edit.png" alt="">
+                                </div>
+                            </div>
+                            <div class="contract"> <!-- 서약서 자세히보기 블록-->
+                                <div class="contract_button">
+                                    <div class="contract_img">
+                                        <img src="./img/contract_edit.png" alt="">
+                                    </div>
+                                    <div class="contract_text">
+                                        서약서 자세히 보기
+                                    </div>
+                                </div>
+                                <hr color="#955c98"/>
+                            </div>
+                            <div class="menu_bottom"> <!-- menu 4가지 -->
+                                <div class="camp_box"> <!-- 코드캠프13기 -->
+                                    <div class="camp">
+                                        <div class="camp_img">
+                                            <img src="./img/logo_codecamp.png" alt="">
+                                        </div>
+                                        <div class="camp_text">
+                                            코드캠프 13기
+                                        </div>
+                                    </div>
+                                    <div class="lessoning">
+                                        <div class="lessioning_text">수강중</div>
+                                    </div>
+                                </div>
+                                <div id="student_list"> <!-- 수강생리스트 -->
+                                    <div class="student_box">
+                                        <div class="student">
+                                            <div class="student_img">
+                                                <img src="./img/group.png" alt="">
+                                            </div>
+                                            <div class="student_text">
+                                                수강생 리스트
+                                            </div>
+                                        </div>
+                                        <div class="student_arrow">
+                                            <img src="./img/arrow_down.png" alt="">
+                                        </div>
+                                    </div>
+                                    <div class="sign_box">
+                                        <div class="sign_text_box">
+                                            <div class="sign_text">현재 가입한 맴버가 없어요.</div>
+                                            <div class="sign_text">회원가입 해보세요.</div>
+                                        </div>
+                                        <div class="sign_button_box">
+                                            <div class="sign_img">
+                                                <img src="./img/person_add.png" alt="">
+                                            </div>
+                                            <div class="sign_button_text">
+                                                가입하기
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="channel"> <!-- channel -->
+                                    <div class="channel_header">
+                                        <div class="channel_box">
+                                            <div class="channel_img">
+                                                <img src="./img/channel_list.png" alt="">
+                                            </div>
+                                            <div class="channel_text">
+                                                채널
+                                            </div>
+                                        </div>
+                                        <div class="channel_arrow">
+                                            <img src="./img/arrow_down.png" alt="">
+                                        </div>
+                                    </div>
+                                    <div class="channel_body">
+                                        <ul>
+                                            <li># 채널 1</li>
+                                            <li># 채널 2</li>
+                                            <li># 채널 3</li>
+                                            <li># 채널 4</li>
+                                        </ul>
+                                    </div>
+                                </div>
+                                <div class="ban_member_list"> <!-- 차단맴버 리스트-->
+                                    <div class="ban_member_img">
+                                        <img src="./img/skull.png" alt="">
+                                    </div>
+                                    <div class="ban_member_text">
+                                        차단 멤버 리스트
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="bg4">
+                        <div class="bg5">
+                            <div class="bg5_header">
+                                <div class="header_text1"> 코드캠프에 가입하고</div>
+                                <div class="header_text2"> 개발자로 커리어 점프 하세요.</div>
+                            </div>
+                            <div class="bg5_body">
+                                <div class="input_box">
+                                    <div class="input_text">이름</div>
+                                    <input type="text" id="inputName" placeholder="이름을 입력해 주세요.">
+                                </div>
+                                <div class="input_box">
+                                    <div class="input_text">이메일</div>
+                                    <input type="text" id="inputEmail" placeholder="네이버,구글,한메일,카카오 계정만 입력">
+                                </div>
+                                <div class="error_message" id="emailError">이메일은 naver.com, gmail.com, hanmail.net,<br/> kakao.com만 사용 가능합니다.</div>
+                                <div class="input_box">
+                                    <div class="input_text">비밀번호</div>
+                                    <input type="text" id="inputPw" placeholder="비밀번호를 한번 더 입력해 주세요.">
+                                </div>
+                                <div class="input_box">
+                                    <div class="input_text">비밀번호확인</div>
+                                    <input type="text" id="inputCheckPw" placeholder="비밀번호를 입력해 주세요.">
+                                    <div class="error_message" id="pwError">비밀번호가 일치하지 않습니다.</div>
+                                </div>
+                                <div class="input_box">
+                                    <div class="input_text">전화번호</div>
+                                    <input type="text" id="inputPhone" placeholder="010으로 시작, '-'를 꼭 입력해 주세요.">
+                                    <div class="error_message" id="phoneError">전화번호 입력시 '-'를 입력해주세요 ex&#41;0010-1234-5678</div>
+                                </div>
+                                <div class="certified_box"> <!-- 인증번호 요청 -->
+                                    <div class="certified">
+                                        <div class="certified_number" id="랜덤번호">000000</div>
+                                        <button class="certified_request" onclick="certified()" id="랜덤번호요청">
+                                            <div class="certified_request_text">인증번호 요청</div>
+                                        </button>
+                                    </div>
+                                    <div id="certified_button_box">
+                                        <button class="certified_button" id="인증하기버튼">
+                                            <div class="certified_button_text">인증하기</div>
+                                        </button>
+                                    </div>
+                                </div>
+                                <div class="introduce_box"> <!-- 자기소개 box -->
+                                    <div class="introduce_text">자기소개</div>
+                                    <textarea name="introduce" id="introduce_textarea" placeholder="자기소개를 입력해 주세요."></textarea>
+                                </div>
+                                <div class="sex_box"> <!-- 성별 박스 -->
+                                    <div class="sex_text">성별</div>
+                                    <div class="radio_box">
+                                        <input type="radio" name="sexRadio" id="남자" value="남성"/><label for="남자">남성</label>
+                                        <input type="radio" name="sexRadio" id="여자" value="여성"/><label for="여자">여성</label>
+                                    </div>
+                                </div>
+                                <div class="bottom_box"> <!-- 체크박스&&가입하기버튼 -->
+                                    <div class="check_box">
+                                        <input type="checkbox" name="check" value="Y" id="동의하기체크"><label for="동의하기체크">집에는 씻으러만 가는데 동의합니다.</label>
+                                    </div>
+                                        <button id="sign_button" onclick="formInvalid()">
+                                            <div class="sign_button_text">가입</div>
+                                        </button>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="bg6"></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </body>
+</html>
